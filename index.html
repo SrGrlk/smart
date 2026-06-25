@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Apoio Acadêmico | Consultoria e Revisão Premium</title>
+    <meta name="description" content="Apoio acadêmico profissional para quem busca qualidade e organização. Revisão, formatação, apresentações e consultoria acadêmica para estudantes e pesquisadores.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Apoio Acadêmico | Consultoria Premium">
+    <meta property="og:description" content="Revisão, formatação, apresentações e consultoria acadêmica especializada para graduação e pós-graduação.">
+    <meta property="og:image" content="./content.png">
+    <meta property="og:url" content="https://smartapoioacademico.com.br">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Smart Apoio Acadêmico",
+      "url": "https://smartapoioacademico.com.br",
+      "logo": "./logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5581996491049",
+        "contactType": "customer service",
+        "email": "smartapoioacademico@protonmail.com"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Smart Apoio Acadêmico" />
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a href="#hero-form" class="btn-primary btn-nav">SOLICITAR ORÇAMENTO</a>
+            
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SEÇÃO 1: HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <!-- Background image will be set via CSS or an image element -->
+            <img src="content.png" alt="Estudante em ambiente moderno" loading="lazy" />
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>APOIO ACADÊMICO PROFISSIONAL PARA QUEM BUSCA QUALIDADE E ORGANIZAÇÃO</h1>
+                <p>Revisão, formatação, apresentações, consultoria acadêmica e apoio especializado para estudantes de graduação, pós-graduação, mestrado e doutorado.</p>
+                <div class="hero-buttons">
+                    <a href="#hero-form" class="btn-primary">SOLICITAR ORÇAMENTO</a>
+                    <a href="https://wa.me/5581996491049" target="_blank" class="btn-secondary"><i class="ph ph-whatsapp-logo"></i> FALAR NO WHATSAPP</a>
+                </div>
+            </div>
+            
+            <div class="hero-form-card" id="hero-form">
+                <h3>Receba um orçamento</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nome" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="whatsapp" placeholder="WhatsApp (DDD + Número)" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="curso" placeholder="Curso/Área" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="servico" required>
+                            <option value="" disabled selected>Serviço desejado</option>
+                            <option value="Formatacao ABNT">Formatação ABNT</option>
+                            <option value="Revisao">Revisão Ortográfica/Gramatical</option>
+                            <option value="Consultoria">Consultoria TCC/Monografia</option>
+                            <option value="Slides">Slides e Apresentações</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="prazo" placeholder="Prazo final (Opcional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" placeholder="Descreva sua necessidade (Mensagem)" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">RECEBER ORÇAMENTO GRATUITO</button>
+                    
+                    <div class="form-badges">
+                        <span><i class="ph ph-clock"></i> Resposta em até 30 min</span>
+                        <span><i class="ph ph-user-focus"></i> Atendimento personalizado</span>
+                        <span><i class="ph ph-lock-key"></i> Sigilo garantido</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: NÚMEROS -->
+    <section class="numbers section-padding bg-light">
+        <div class="container numbers-grid">
+            <div class="number-item">
+                <h2 class="counter" data-target="1000">+0</h2>
+                <p>Atendimentos realizados</p>
+            </div>
+            <div class="number-item">
+                <h2 class="counter" data-target="500">+0</h2>
+                <p>Projetos apoiados</p>
+            </div>
+            <div class="number-item">
+                <h2 class="counter" data-target="98">0%</h2>
+                <p>Clientes satisfeitos</p>
+            </div>
+            <div class="number-item">
+                <h2 class="counter" data-target="24">0h</h2>
+                <p>Tempo médio de resposta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: SERVIÇOS -->
+    <section id="servicos" class="services section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções acadêmicas completas para alavancar sua pesquisa.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service items generated dynamically or static -->
+                <div class="service-card">
+                    <i class="ph ph-text-align-left service-icon"></i>
+                    <h3>Formatação ABNT</h3>
+                    <p>Adequação rigorosa às normas da ABNT ou padrões específicos da sua instituição.</p>
+                    <a href="https://wa.me/5581996491049?text=Gostaria%20de%20saber%20mais%20sobre%20Formata%C3%A7%C3%A3o%20ABNT" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-spellcheck service-icon"></i>
+                    <h3>Revisão Ortográfica e Gramatical</h3>
+                    <p>Correção impecável para garantir a credibilidade do seu texto.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-book-open-text service-icon"></i>
+                    <h3>Revisão Acadêmica</h3>
+                    <p>Análise de coesão, coerência e linguagem científica.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-student service-icon"></i>
+                    <h3>Consultoria TCC</h3>
+                    <p>Apoio estrutural e metodológico para o seu Trabalho de Conclusão de Curso.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-file-text service-icon"></i>
+                    <h3>Pré-Projeto & Projeto de Pesquisa</h3>
+                    <p>Orientação e estruturação da sua ideia de pesquisa com rigor acadêmico.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-books service-icon"></i>
+                    <h3>Revisão Bibliográfica</h3>
+                    <p>Mapeamento e estruturação do referencial teórico da sua pesquisa.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-chart-bar service-icon"></i>
+                    <h3>Relatórios</h3>
+                    <p>Elaboração estrutural de relatórios de estágio, práticas e laboratório.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-article service-icon"></i>
+                    <h3>Resenhas & Fichamentos</h3>
+                    <p>Apoio na síntese e análise crítica de obras e artigos científicos.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-presentation-chart service-icon"></i>
+                    <h3>Slides Acadêmicos</h3>
+                    <p>Apresentações com design premium e fluxo lógico impecável.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-microphone-stage service-icon"></i>
+                    <h3>Preparação para Apresentação</h3>
+                    <p>Dicas de oratória, postura e defesa em bancas avaliadoras.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-tree-structure service-icon"></i>
+                    <h3>Mapas Mentais</h3>
+                    <p>Criação de esquemas visuais para resumos e estudos complexos.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-globe service-icon"></i>
+                    <h3>Abstract & Referências</h3>
+                    <p>Tradução do resumo, revisão técnica e organização automatizada do acervo referencial.</p>
+                    <a href="https://wa.me/5581996491049" class="btn-link" target="_blank">Saiba Mais <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: COMO FUNCIONA -->
+    <section id="como-funciona" class="how-it-works section-padding bg-dark">
+        <div class="container">
+            <div class="section-title text-center light-text">
+                <h2>Como Funciona</h2>
+                <p>Um processo otimizado, transparente e seguro.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">1</div>
+                    <div class="timeline-content">
+                        <h3>Você envia sua necessidade</h3>
+                        <p>Preencha o formulário ou chame no WhatsApp detalhando seu projeto.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">2</div>
+                    <div class="timeline-content">
+                        <h3>Nossa equipe analisa</h3>
+                        <p>Avaliamos o escopo, urgência e requisitos da sua solicitação.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">3</div>
+                    <div class="timeline-content">
+                        <h3>Recebe orçamento personalizado</h3>
+                        <p>Apresentamos uma proposta clara, justa e sem taxas ocultas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">4</div>
+                    <div class="timeline-content">
+                        <h3>Iniciamos o atendimento</h3>
+                        <p>Após aprovação, começamos o desenvolvimento com total sigilo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">5</div>
+                    <div class="timeline-content">
+                        <h3>Você recebe o material revisado</h3>
+                        <p>Entrega dentro do prazo acordado com altíssimo padrão de qualidade.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">6</div>
+                    <div class="timeline-content">
+                        <h3>Suporte e ajustes</h3>
+                        <p>Garantimos correções e ajustes finais para sua total satisfação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: DIFERENCIAIS -->
+    <section id="diferenciais" class="differentials section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Diferenciais</h2>
+                <p>Por que a Smart é a escolha certa para o seu sucesso acadêmico?</p>
+            </div>
+            
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <i class="ph ph-heart"></i>
+                    <h3>Atendimento Humanizado</h3>
+                    <p>Sem respostas automáticas robóticas. Você fala com especialistas prontos para ouvir sua demanda.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="ph ph-shield-check"></i>
+                    <h3>Confidencialidade Total</h3>
+                    <p>Seus dados e sua pesquisa estão protegidos por rigorosos protocolos de privacidade.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="ph ph-clock-countdown"></i>
+                    <h3>Entrega no Prazo</h3>
+                    <p>Compromisso inegociável com os prazos. Sua tranquilidade é nossa prioridade.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="ph ph-user-circle-gear"></i>
+                    <h3>Suporte Personalizado</h3>
+                    <p>Cada projeto é único e recebe atenção dedicada de acordo com as diretrizes da sua banca.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="ph ph-check-square-offset"></i>
+                    <h3>Correções Inclusas</h3>
+                    <p>Ajustes previstos no escopo inicial não geram custos extras.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="ph ph-users-three"></i>
+                    <h3>Especialistas Multidisciplinares</h3>
+                    <p>Profissionais experientes em diversas áreas do conhecimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 6: PACOTES -->
+    <section class="packages section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Pacotes de Serviços</h2>
+                <p>Soluções sob medida para o seu momento acadêmico.</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>Pacote Essencial</h3>
+                    <div class="price">A partir de R$ 97</div>
+                    <ul class="package-features">
+                        <li><i class="ph ph-check-circle"></i> Revisão Ortográfica</li>
+                        <li><i class="ph ph-check-circle"></i> Formatação ABNT</li>
+                        <li><i class="ph ph-check-circle"></i> Ajuste de Referências</li>
+                    </ul>
+                    <a href="https://wa.me/5581996491049?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Pacote%20Essencial." target="_blank" class="btn-primary btn-block btn-outline">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="package-card popular">
+                    <div class="popular-badge">Mais Vendido</div>
+                    <h3>Pacote Acadêmico</h3>
+                    <div class="price">A partir de R$ 197</div>
+                    <ul class="package-features">
+                        <li><i class="ph ph-check-circle"></i> Consultoria Estrutural</li>
+                        <li><i class="ph ph-check-circle"></i> Revisão Acadêmica Completa</li>
+                        <li><i class="ph ph-check-circle"></i> Formatação Premium ABNT</li>
+                        <li><i class="ph ph-check-circle"></i> Correções ilimitadas*</li>
+                    </ul>
+                    <a href="https://wa.me/5581996491049?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Pacote%20Acad%C3%AAmico." target="_blank" class="btn-primary btn-block">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="package-card premium">
+                    <h3>Pacote Premium</h3>
+                    <div class="price">A partir de R$ 397</div>
+                    <ul class="package-features">
+                        <li><i class="ph ph-check-circle"></i> Consultoria Completa</li>
+                        <li><i class="ph ph-check-circle"></i> Revisão Avançada Crítica</li>
+                        <li><i class="ph ph-check-circle"></i> Design de Slides</li>
+                        <li><i class="ph ph-check-circle"></i> Preparação para Defesa</li>
+                    </ul>
+                    <a href="https://wa.me/5581996491049?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Pacote%20Premium." target="_blank" class="btn-primary btn-block btn-outline">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7: DEPOIMENTOS -->
+    <section id="depoimentos" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>O que dizem nossos clientes</h2>
+                <p>Nossa maior propaganda é a satisfação e aprovação de quem confia na Smart.</p>
+            </div>
+            
+            <div class="slider-wrapper">
+                <button class="slider-btn prev-btn" aria-label="Anterior"><i class="ph ph-caret-left"></i></button>
+                <div class="testimonials-slider" id="slider">
+                    <!-- Depoimentos injectados via JS para loop infinito -->
+                </div>
+                <button class="slider-btn next-btn" aria-label="Próximo"><i class="ph ph-caret-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 8: COMPARAÇÃO -->
+    <section class="comparison section-padding bg-dark">
+        <div class="container">
+            <div class="section-title text-center light-text">
+                <h2>Por que escolher o Smart?</h2>
+                <p>Entenda a diferença de contratar profissionais qualificados.</p>
+            </div>
+            
+            <div class="comparison-grid">
+                <div class="comp-card smart-card">
+                    <div class="comp-header">
+                        <img src="logo.png" alt="Smart" class="comp-logo">
+                        <h3>Smart Apoio Acadêmico</h3>
+                    </div>
+                    <ul class="comp-list">
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Atendimento ágil e humano</li>
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Especialistas verificados</li>
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Correções de escopo inclusas</li>
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Comunicação direta e clara</li>
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Processo altamente organizado</li>
+                    </ul>
+                </div>
+                
+                <div class="comp-card other-card">
+                    <div class="comp-header">
+                        <h3>Outras Opções</h3>
+                    </div>
+                    <ul class="comp-list">
+                        <li><i class="ph-fill ph-x-circle text-gray"></i> Atendimento lento ou via robôs</li>
+                        <li><i class="ph-fill ph-x-circle text-gray"></i> Freelancers generalistas</li>
+                        <li><i class="ph-fill ph-x-circle text-gray"></i> Cobram por cada pequeno ajuste</li>
+                        <li><i class="ph-fill ph-x-circle text-gray"></i> Dificuldade de contato</li>
+                        <li><i class="ph-fill ph-x-circle text-gray"></i> Falta de acompanhamento e suporte</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 9: FAQ -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas e solicite seu orçamento com segurança.</p>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Como funciona o orçamento? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Você nos envia detalhes do seu projeto via formulário ou WhatsApp. Nossa equipe analisa a complexidade e o prazo, retornando com um orçamento detalhado e sem compromisso em até 30 minutos (em horário comercial).</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Quanto tempo demora? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>O prazo varia conforme o volume de páginas e a complexidade do serviço. Temos opções de prazos regulares e prazos de urgência. O prazo exato será definido no seu orçamento.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Existe sigilo sobre meu trabalho? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Absolutamente. Garantimos confidencialidade total através de Termos de Sigilo. Nenhum dado seu ou da sua pesquisa será compartilhado, publicado ou repassado.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Como funciona o pagamento? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Trabalhamos com PIX, boleto ou cartão de crédito. Normalmente solicitamos 50% para início e 50% na entrega, mas oferecemos condições facilitadas e parcelamento dependendo do valor.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Posso solicitar ajustes após a entrega? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sim! Oferecemos garantia de ajustes para correções relacionadas ao escopo inicial contratado, sem custos adicionais, dentro de um prazo preestabelecido após a entrega.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Quais áreas de conhecimento são atendidas? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Atendemos todas as áreas do conhecimento (Exatas, Humanas, Saúde e Biológicas), pois contamos com uma equipe multidisciplinar de especialistas.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        O atendimento é exclusivamente online? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sim, nosso processo é 100% online, garantindo agilidade e permitindo que atendamos estudantes de todo o Brasil e do exterior.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Como recebo o material revisado? <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Enviamos os arquivos via e-mail e/ou WhatsApp, nos formatos Word e PDF, prontos para uso. O envio é feito de forma segura para garantir a integridade dos dados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 10: CTA FINAL -->
+    <section id="contato" class="cta-final section-padding bg-gold text-center">
+        <div class="container">
+            <h2>PRONTO PARA RECEBER SEU ORÇAMENTO?</h2>
+            <p>Fale conosco e receba uma análise personalizada da sua necessidade em poucos minutos.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5581996491049" target="_blank" class="btn-dark"><i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+                <a href="https://instagram.com/smartapoioacademico" target="_blank" class="btn-dark btn-outline-dark"><i class="ph ph-instagram-logo"></i> Instagram</a>
+                <a href="mailto:smartapoioacademico@protonmail.com" class="btn-dark btn-outline-dark"><i class="ph ph-envelope"></i> E-mail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Smart Apoio Acadêmico" class="footer-logo">
+                    <p>Qualidade, sigilo e profissionalismo para alavancar sua trajetória acadêmica.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5581996491049"><i class="ph ph-whatsapp-logo"></i> (81) 99649-1049</a></li>
+                        <li><a href="mailto:smartapoioacademico@protonmail.com"><i class="ph ph-envelope"></i> smartapoioacademico@protonmail.com</a></li>
+                        <li><a href="https://instagram.com/smartapoioacademico"><i class="ph ph-instagram-logo"></i> @smartapoioacademico</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">LGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Smart Apoio Acadêmico. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAB WPP -->
+    <a href="https://wa.me/5581996491049" target="_blank" class="fab-whatsapp" aria-label="Falar no WhatsApp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
