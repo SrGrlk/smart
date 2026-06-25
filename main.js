@@ -187,7 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const nome = document.getElementById('nome').value;
             const whatsappNumber = document.getElementById('whatsapp').value;
-            const email = document.getElementById('email').value;
             const curso = document.getElementById('curso').value;
             const servico = document.getElementById('servico').value;
             const prazo = document.getElementById('prazo').value;
@@ -199,7 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const text = `Olá! Meu nome é *${nome}* e gostaria de solicitar um orçamento.
             
 *Resumo da Solicitação:*
-- *E-mail:* ${email}
 - *WhatsApp/Contato:* ${whatsappNumber}
 - *Curso/Área:* ${curso}
 - *Serviço Desejado:* ${servico}
