@@ -215,4 +215,26 @@ Aguardo o retorno. Obrigado!`;
             window.open(whatsappUrl, '_blank');
         });
     }
+
+    /* ==========================================================================
+       COMPROVAÇÕES CAROUSEL
+       ========================================================================== */
+    const proofsTrack = document.getElementById('proofs-track');
+    const prevProofBtn = document.querySelector('.prev-proof-btn');
+    const nextProofBtn = document.querySelector('.next-proof-btn');
+
+    if (proofsTrack && prevProofBtn && nextProofBtn) {
+        const getCardWidth = () => {
+            const card = proofsTrack.querySelector('.proof-card');
+            return card ? card.offsetWidth + 20 : 300; // largura do card + gap
+        };
+
+        nextProofBtn.addEventListener('click', () => {
+            proofsTrack.scrollLeft += getCardWidth();
+        });
+
+        prevProofBtn.addEventListener('click', () => {
+            proofsTrack.scrollLeft -= getCardWidth();
+        });
+    }
 });
